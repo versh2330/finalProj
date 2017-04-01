@@ -2,7 +2,7 @@
 <suite name="Demo Test Plan" verbose="1">
     <parameter name="Name" value="versh23@yandex.ru"/>
     <parameter name="Pass" value="sandal"/>
-   <!-- <test name="Send Message Test" preserve-order="true">
+    <test name="Send Message Test" preserve-order="true">
 
         <parameter name="Recipient" value="versh21"/>
         <parameter name="Body" value="Hello world"/>
@@ -19,7 +19,7 @@
         <classes>
             <class name="testclass.tests.ProfileEditTest"/>
         </classes>
-    </test>-->
+    </test>
     <test name="Save data Test" preserve-order="true">
         <parameter name="SearchString" value="авария на мкад"/>
     <classes>
