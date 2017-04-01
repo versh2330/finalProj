@@ -22,7 +22,7 @@ public class ProfilePage extends BaseForm {
     private TextBox txbRecipient = new TextBox(By.id("compose_uname"), "To... field");
     private TextBox txbSubject = new TextBox(By.id("compose_subject"), "Subject field");
     private TextBox txbMessageBody = new TextBox(By.id("compose_text"), "Message body");
-    private Label lblOutcoming = new Label(By.xpath("//[@id='l_sentbox']/a"), "Outcoming messages folder");
+    private Label lblOutcoming = new Label(By.xpath("//li[@id='l_sentbox']/a"), "Outcoming messages folder");
     private Label lblSelectAll = new Label(By.id("select-msg-all"), "Select All messages");
     private Label lblDelete = new Label(By.xpath("//span[contains(.,'удалить')]"), "Delete button");
     private Label lblEmtyOutbox = new Label(By.className("pmmsg__empty"), "Outbox empty");
@@ -63,6 +63,7 @@ public class ProfilePage extends BaseForm {
         info("Sending message");
         btnSend.click();
         info("Checking outcoming messages folder");
+        lblOutcoming.waitForIsElementPresent();
         lblOutcoming.click();
         String actualRecipient = new Label(By.xpath("//div[@class='lpm-author']/a")).getText();
         assertEquals(actualRecipient, messageRecipient);
