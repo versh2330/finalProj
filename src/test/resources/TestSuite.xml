@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Demo Test Plan" verbose="1">
+    <parameter name="Name" value="versh23@yandex.ru"/>
+    <parameter name="Pass" value="sandal"/>
+   <!-- <test name="Send Message Test" preserve-order="true">
+
+        <parameter name="Recipient" value="versh21"/>
+        <parameter name="Body" value="Hello world"/>
+        <parameter name="Subject" value="Hey,dude"/>
+        <classes>
+            <class name="testclass.tests.SendMessageTest"/>
+        </classes>
+    </test>
+    <test name="Edit Profile Test" preserve-order="true">
+        <parameter name="City" value="Минск"/>
+        <parameter name="Day" value="5"/>
+        <parameter name="Month" value="марта"/>
+        <parameter name="Year" value="1983"/>
+        <classes>
+            <class name="testclass.tests.ProfileEditTest"/>
+        </classes>
+    </test>-->
+    <test name="Save data Test" preserve-order="true">
+        <parameter name="SearchString" value="авария на мкад"/>
+    <classes>
+        <class name="testclass.tests.SaveDataFromNewsTest"/>
+    </classes>
+    </test>
+
+</suite>
