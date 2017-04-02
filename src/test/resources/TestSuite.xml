@@ -28,8 +28,8 @@
     </test>
     <test name="Publish Market Test" preserve-order="true">
 
-        <parameter name="Smartphone" value="HTC One M9"/>
-        <parameter name="MessageBody" value="Куплю HTC One M9 в любом состоянии"/>
+        <parameter name="Smartphone" value="htc desire 820"/>
+        <parameter name="MessageBody" value="Куплю htc desire 820 в любом состоянии"/>
         <parameter name="Price" value="100,00"/>
         <classes>
             <class name="testclass.tests.PublishMarketRequestTest"/>
