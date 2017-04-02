@@ -63,12 +63,13 @@ public class ProfilePage extends BaseForm {
         info("Sending message");
         btnSend.click();
         info("Checking outcoming messages folder");
-        lblOutcoming.waitForIsElementPresent();
+
         lblOutcoming.click();
-        String actualRecipient = new Label(By.xpath("//div[@class='lpm-author']/a")).getText();
-        assertEquals(actualRecipient, messageRecipient);
         String actualSubject = new Label(By.xpath("//div[@class='lpm-subj']/a")).getText();
         assertEquals(actualSubject, messageSubject);
+
+        String actualRecipient = new Label(By.xpath("//div[@class='lpm-author']/a")).getText();
+        assertEquals(messageRecipient, actualRecipient);
         info("Message Recipient and Subject are correct");
         info("Deleting all messages");
         lblSelectAll.click();
