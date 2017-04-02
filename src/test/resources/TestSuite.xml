@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name="Demo Test Plan" verbose="1">
+<suite name="Final project Test Plan" verbose="1">
     <parameter name="Name" value="versh23@yandex.ru"/>
     <parameter name="Pass" value="sandal"/>
     <test name="Send Message Test" preserve-order="true">
@@ -25,6 +25,15 @@
     <classes>
         <class name="testclass.tests.SaveDataFromNewsTest"/>
     </classes>
+    </test>
+    <test name="Send Message Test" preserve-order="true">
+
+        <parameter name="Smartphone" value="HTC One M9"/>
+        <parameter name="MessageBody" value="Куплю HTC One M9 в любом состоянии"/>
+        <parameter name="Price" value="100,00"/>
+        <classes>
+            <class name="testclass.tests.PublishMarketRequestTest"/>
+        </classes>
     </test>
 
 </suite>
