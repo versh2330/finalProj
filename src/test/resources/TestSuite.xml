@@ -26,7 +26,7 @@
         <class name="testclass.tests.SaveDataFromNewsTest"/>
     </classes>
     </test>
-    <test name="Send Message Test" preserve-order="true">
+    <test name="Publish Market Test" preserve-order="true">
 
         <parameter name="Smartphone" value="HTC One M9"/>
         <parameter name="MessageBody" value="Куплю HTC One M9 в любом состоянии"/>
