@@ -5,7 +5,6 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import webdriver.BaseForm;
-import webdriver.Browser;
 import webdriver.elements.Label;
 import webdriver.elements.TextBox;
 
@@ -98,11 +97,8 @@ public class ResultsPage extends BaseForm {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        System.out.println("Step1");
         bestBike = new Label(By.xpath("//div[@id='schema-products']/div[1]//div[@class='schema-product__title']/a"), "Best result");
-        System.out.println("Step2");
         scrollTo(bestBike.getElement());
-        System.out.println("Step3");
         bikeName = bestBike.getText();
         bestBike.click();
         favouriteItem = new Label(By.xpath("//span[@class='catalog-masthead-controls__input i-checkbox i-checkbox_star']/span"), "Add to favorites");

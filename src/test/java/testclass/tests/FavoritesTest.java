@@ -1,6 +1,6 @@
 package testclass.tests;
 
-import org.testng.annotations.AfterTest;
+
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import testclass.pop.CatalogPage;
@@ -28,7 +28,6 @@ public class FavoritesTest extends BaseTest {
         this.year = year;
         this.madeFor = madeFor;
         this.wheelRadius = wheelRadius;
-        System.out.println(year + madeFor + wheelRadius);
 
     }
 
@@ -37,6 +36,8 @@ public class FavoritesTest extends BaseTest {
         logStep("Open main page");
         MainPage mainPage = new MainPage();
         mainPage.login(name, pass);
+
+        logStep("Open Catalog");
         mainPage.open(MainPage.lblCatalog);
 
         logStep("Open Bikes catalog page");
