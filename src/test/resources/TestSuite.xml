@@ -2,7 +2,7 @@
 <suite name="Final project Test Plan" verbose="1">
     <parameter name="Name" value="versh23@yandex.ru"/>
     <parameter name="Pass" value="sandal"/>
-    <test name="Send Message Test" preserve-order="true">
+    <!--<test name="Send Message Test" preserve-order="true">
 
         <parameter name="Recipient" value="versh21"/>
         <parameter name="Body" value="Hello world"/>
@@ -33,6 +33,14 @@
         <parameter name="Price" value="100,00"/>
         <classes>
             <class name="testclass.tests.PublishMarketRequestTest"/>
+        </classes>
+    </test>-->
+    <test name="Favorites Test" preserve-order="true">
+        <parameter name="Year" value="in 2017"/> <!--@value = "before 2017" | "in 2017"-->
+        <parameter name="MadeFor" value="mountain"/> <!--@value = "mountain" | "city"-->
+        <parameter name="WheelRadius" value="29"/> <!--@value = "26" | "29"-->
+        <classes>
+            <class name="testclass.tests.FavoritesTest"/>
         </classes>
     </test>
 

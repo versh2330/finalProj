@@ -13,6 +13,7 @@ public class MainPage extends BaseForm {
     private Button btnLogin = new Button(By.xpath("//div[@id='userbar']//div[contains(text(),'Вход')]"), "Login button");
     public static Label lblMarket = new Label(By.xpath("//nav[@class='b-top-navigation']//span[contains(text(),'Барахолка')]"), "Catalog page");
     public static Label lblTechnoNews = new Label(By.xpath("//h2/a[contains(text(),'Технологии')]"), "News page");
+    public static Label lblCatalog = new Label(By.xpath(".//*[@class=\"b-main-navigation\"]/li/a[contains(.,\"Каталог\")]"), "Catalog link");
     public static Label lblProfileName = new Label(By.xpath("//p[@class='user-name']/a"), "Open Profile");
     private Label lblLogout = new Label(By.xpath("//[@id='userbar']//a[contains(text(),'Выйти')]"), "Logout");
     private TextBox txbName = new TextBox(By.xpath("//input[@data-field='login'][@type='text']"), "Name");
@@ -49,6 +50,9 @@ public class MainPage extends BaseForm {
             lblTechnoNews.click();
         } else if (label.equals(lblMarket)) {
             lblMarket.click();
+        }
+        else if (label.equals(lblCatalog)) {
+            lblCatalog.click();
         }
     }
 
